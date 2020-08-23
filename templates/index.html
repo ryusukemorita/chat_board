@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block headline %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<p>{{ message }}
+<p>{{ chat }}</p>
+<pre>{{ data }}</pre>
+</p>
+{% endblock %}
+
+{% block footer %}
+copyright 2019 morita.
+{% endblock %}
