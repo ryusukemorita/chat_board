@@ -39,16 +39,16 @@ except:
 @app.route('/', methods=['GET'])
 def index():
     global message_data
-    return render_template('message.html',\
-                            login = False,\
-                            title = 'Message_board',\
-                            message = 'NOT logined...',\
+    return render_template('message.html', \
+                            login = False, \
+                            title = 'Message_board', \
+                            message = 'NOT logined...', \
                             data = message_data )
 
 # Post message
-@app.route('/', methods=['POST'])
+@app.route('/post', methods=['POST'])
 def postMsg():
-    global member_data
+    global message_data
     id = request.form.get('id')
     msg = request.form.get('comment')
     message_data.append((id, msg))
@@ -87,8 +87,6 @@ def login_post():
         except:
             pass
     return flg
-
-
 
 if __name__ == '__main__':
     app.debug = True
