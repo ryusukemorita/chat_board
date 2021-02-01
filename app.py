@@ -41,7 +41,7 @@ def index():
     global message_data
     return render_template('message.html', \
                             login = False, \
-                            title = 'Message_board', \
+                            title = 'Chat Board', \
                             message = 'NOT logined...', \
                             data = message_data )
 
@@ -52,7 +52,7 @@ def postMsg():
     id = request.form.get('id')
     msg = request.form.get('comment')
     message_data.append((id, msg))
-    if len (message_data) > 25:
+    if len(message_data) > 25:
         message_data.pop(0)
     try:
         with open(message_data_file, 'wb') as f:
@@ -72,7 +72,7 @@ def getMsg():
 def login_post():
     global member_data, message_data
     id = request.form.get('id')
-    pswd =request.form.get('pass')
+    pswd = request.form.get('pass')
     if id in member_data:
         if pswd == member_data[id]:
             flg = 'True'
