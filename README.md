@@ -28,13 +28,13 @@ From your command line:
 1. Clone this repository
 
 ```bash
-$ git clone https://github.com/nouvelle/coffee-time.git
+$ git clone https://github.com/ryusukemorita/chat_board.git
 ```
 
 2. Go into the repository
 
 ```bash
-$ cd coffee-time
+$ cd chat_board
 ```
 
 3. Install dependencies
@@ -86,4 +86,4 @@ I will be adding more function.
 
 # Contributing
 
-Pull requests are welcome!! 😊
+Pull requests are welcome!!
