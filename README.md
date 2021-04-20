@@ -77,7 +77,7 @@ $ yarn seed
 # Technology used
 
 This software uses the following open source packages:
-![image](https://github.com/nouvelle/coffee-time/blob/master/images/technology.png?raw=true)
+![image](https://github.com/ryusukemorita/chat_board/blob/master/image/tec.gif)
 
 # Future features
 
